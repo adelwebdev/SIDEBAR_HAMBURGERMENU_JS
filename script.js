@@ -6,3 +6,11 @@ toggleButton.addEventListener("click", show);
 function show() {
   sideBar.classList.toggle("active");
 }
+
+//REMOVE SIDE BAR IF CLICK ON MAIN CONTENT!!
+
+const content = document.querySelector(".content");
+
+content.addEventListener("click", () => {
+  sideBar.classList.remove("active");
+});

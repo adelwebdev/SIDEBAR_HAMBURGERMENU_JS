@@ -7,11 +7,11 @@
   margin: 0px;
 }
 body {
-  background: black;
+  background: #3c2a2a;
   font-family: "Poppins", sans serif;
 }
 .content {
-  color: brown;
+  color: #b17d7d;
   height: 100vh;
   transition: 1s;
 }
@@ -44,7 +44,7 @@ p {
   width: 60px;
   height: 10px;
   border-radius: 5px;
-  background: whitesmoke;
+  background: #a58e8e;
   display: block;
   margin-top: 4px;
   transition: 2s ease;
@@ -79,6 +79,7 @@ li:hover {
 #side-bar.active span:nth-child(3) {
   transform: rotate(-45deg);
 }
-#side-bar.active .content {
-  opacity: 0.3s;
+#side-bar.active ~ .content {
+  opacity: 0.3;
 }
+/* on met le tilde "~" lorsque l'on séléctionne un élément frère ( et non parent ou enfant) */
